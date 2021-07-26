@@ -1,0 +1,22 @@
+@import '../MediaUtils';
+@import '../Colors';
+
+.section {
+    width: 100%;
+    background-color: $COLOR_H5;
+    .wrap {
+        width: 100%;
+        height: 200px;
+        margin: 0 auto;
+        background-color: $COLOR_H2;
+    }
+}
+
+@include Desktop {
+    .section {
+        .wrap {
+            width: $DESKTOP_SIZE_MIN;
+        }
+    }
+}
+

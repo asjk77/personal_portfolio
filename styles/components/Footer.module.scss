@@ -1,0 +1,99 @@
+@import '../MediaUtils';
+@import '../Colors';
+
+.footer {
+    background-color: $COLOR_H0;
+    width: 100%;
+    .wrap {
+        margin: 0 auto;
+
+        .nav {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .section{
+                width: 50%;
+                .title {
+                    font-size: 25px;
+                    font-weight: bolder;
+                    color: $COLOR_H5;
+                    text-align: right;
+                    border-bottom: 1px solid $COLOR_H5;
+                }
+
+                .item {
+                    color: $COLOR_H5;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 8px 12px;
+                    padding: 8px 12px;
+                    border-radius: 5px;
+                    &:hover { background-color: $COLOR_H2;}
+                }
+
+            }
+            
+        }
+        .box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:space-between;
+            border-top: 1px solid white;
+            color: white;
+            font-weight: bold;
+            padding: 30px;
+            
+            .icons {
+                font-size: 20px;
+                color: white;
+                * {
+                    margin: 10px;
+                    &:hover { background-color: $COLOR_H1; }
+                }
+                
+            }
+        }
+    }
+}
+
+@include Mobile{
+    .footer {
+        .wrap {
+            width: 100%;
+            .nav {
+                flex-direction: column;
+                .section {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+@include Tablet{
+    .footer {
+        .wrap {
+            width: 100%;
+            .nav {
+                flex-direction: column;
+                .section {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}
+@include Desktop {
+    .footer {
+        .wrap {
+            width: $DESKTOP_SIZE_MIN;
+            .nav {
+                flex-direction: row;
+                .section {
+                    margin:0 10px;
+                }
+            }
+        }
+    }
+}

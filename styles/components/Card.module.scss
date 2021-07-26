@@ -1,0 +1,27 @@
+.card {
+    flex: 1;
+    border: 1px solid gray;
+
+    margin: 10px;
+    border-radius: 20px;
+    color: gray;
+    .title {
+        border-bottom: 1px solid gray;
+        font-size: 20px;
+        font-weight: bolder;
+
+        text-align: center;
+        padding: 10px;
+    }
+    .description {
+        margin: 10px;
+        height: 200px;
+
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+.card_container {
+
+}
