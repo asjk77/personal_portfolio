@@ -25,6 +25,7 @@
     .text2 {
         font-size: 20px;
         margin: 20px;
+        font-weight: bolder;
     }
     .arrows {
         display: flex;
@@ -61,4 +62,10 @@
 
 .section_feature {
     font-size: 20px;
+}
+
+.base_text {
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 10px;
 }
